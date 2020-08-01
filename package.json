@@ -18,5 +18,8 @@
   },
   "dependencies": {
     "form-data": "^3.0.0"
+  },
+  "engines": {
+    "yarn": "0.28.4"
   }
 }
