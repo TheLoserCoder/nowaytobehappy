@@ -82,8 +82,7 @@ class HourWheel
     console.log(node.hour)
     console.log(new Date(), " измнено.")
 
-    function next()
-    {
+    const next = () => {
       this.changeHour(node.next, callback);
     }
 
