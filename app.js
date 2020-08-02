@@ -86,6 +86,8 @@ class HourWheel
       this.changeHour(node.next, callback);
     }
 
+    console.log(rez);
+
     setTimeout( next, rez);
 
   };
