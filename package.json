@@ -19,6 +19,7 @@
   "dependencies": {
     "bower": "^1.8.8",
     "easyvk": "^2.7.41",
+    "express": "^4.17.1",
     "grunt": "^1.2.1",
     "grunt-cli": "^1.3.2"
   }
