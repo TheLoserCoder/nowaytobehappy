@@ -64,16 +64,14 @@ class HourWheel
 
     startTime = startTime.getHours();
 
-    console.log(startTime);
+    console.log("Время начала: ", startTime);
     
     let rez = null;
 
-    if(startTime >= 20){
+    if(startTime >= 21){
       let date = new Date();
 
-      date.setHours( date.getHours() + 3);
-
-       console.log(date.getHours());
+      date.setHours( date.getUTCHours() + 3);
 
       let sT = (date.getHours() * 60 * 60 + date.getMinutes() * 60 + date.getSeconds()) * 1000;
       let eT = ((23 * 60 * 60 + 59 * 60 + 59) + ( 6 * 60 * 60)) * 1000;
@@ -81,6 +79,9 @@ class HourWheel
 
     } else{
         let date = new Date();
+
+        date.setHours(date.getUTCHours() + 3);
+
         let sT = (date.getHours()  * 60 * 60 + date.getMinutes() * 60 + date.getSeconds()) * 1000;
         let eT = node.next.hour * 60 * 60 * 1000;
        rez = eT - sT;
