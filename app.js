@@ -93,14 +93,11 @@ class HourWheel
 
     }
 
-    console.log(node.hour)
-    console.log(new Date(), " измнено.")
-
     const next = () => {
       this.changeHour(node.next, callback);
     }
 
-    console.log(rez);
+    console.log('Следующая через: ', rez/1000/60);
 
     setTimeout( next, rez);
 
