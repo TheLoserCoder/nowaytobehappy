@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    
+    <div id = "appBody">
+        <div id = "tools">
+            <div id ="toolswrap">
+               
+                <div class="row">
+                        <div class="span">
+                            Текст
+                        </div>
+                        <div class="input">
+                            <textarea id = "text"></textarea>
+                        </div>
+                    <div id = "size">
+
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="span">
+                            Размер шрифта
+                        </div>
+                        <div class="input">
+                            <input id = "textSize" value = "20">
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="span" id = "refs">
+                            Источник
+                        </div>
+                        <div class="input">
+                            <input id = "ref" type="text">
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="span">
+                            Автор
+                        </div>
+                        <div  class="input">
+                            <input id = "aut" type="text">
+                        </div>
+                </div>
+
+                <div class="row">
+                    <div class="span">
+                        Прозрачность
+                    </div>
+                    <div  class="input">
+                        <input id = "opacity" type="text" value = "60">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="button" id = "auto">Авторазметка</div>
+                </div>
+
+                <div class="row">
+                    <div class="span">
+                        Фон
+                    </div>
+                    <div  class="input">
+                        <div class="button" id = "img">Загрузить</div>
+                        <div class="button" id = "imgcenter">По центру</div>
+                        <div class="button" id = "imgcenterX">По центру X</div>
+                        <div class="button" id = "imgcenterY">По центру Y</div>
+                        <div class="button" id = "deleteimg">Удалить</div>
+                    </div>
+                   
+                </div>
+
+        
+        </div>
+        <div id = "closeopen" ></div>
+    </div>
+        <div id = "rezwrap">
+           
+                
+        
+            <div style = "padding: 30px;">
+                <div id = "changesize"></div>
+                <div id = "rez">
+                    <div id = "blackscreen">
+                        <div id="content">
+                            <div id="textblock">
+                            </div>
+                        </div>
+                        <div id="inform">
+                            
+                            <div id = "reftext"></div>
+                        </div>
+                        <div id = "logo">ПНГ</div>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="button" id = "save">Сохранить</div>
+        </div>
+    </div>
+    <script src = 'node_modules/dom-to-image/src/dom-to-image.js'></script>
+    <script src = 'js/index.js'></script>
+</body>
+</html>
